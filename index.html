@@ -3,33 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Meta tags diubah ke Bahasa Indonesia -->
+
   <meta name="description" content="M. Irlan Yuniardi - Fresh Graduate Teknik Komputer dari Universitas Hamzanwadi. Spesialis IT Support dengan keahlian Microsoft Office, administrasi sistem, dan kerja tim.">
   <meta name="keywords" content="M. Irlan Yuniardi, Teknik Komputer, IT Support, Fresh Graduate, Portofolio, Indonesia, NTB">
   <meta name="author" content="M. Irlan Yuniardi">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0f172a">
-  
-  <!-- Open Graph / Social Media -->
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="M. Irlan Yuniardi | Portofolio Profesional IT">
   <meta property="og:description" content="Fresh Graduate Teknik Komputer dengan predikat Cumlaude. Siap berkontribusi sebagai Staff IT Support dan Operasional.">
   <meta property="og:image" content="/og-image.webp">
   <meta property="og:url" content="https://irlanyuniardi.com">
-  
-  <!-- Twitter Card -->
+
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="M. Irlan Yuniardi | Portofolio Profesional IT">
   <meta name="twitter:description" content="Fresh Graduate Teknik Komputer dengan predikat Cumlaude.">
   
   <title>M. Irlan Yuniardi | Portofolio Profesional IT</title>
   
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -50,7 +46,6 @@
     }
   </script>
   
-  <!-- Schema Markup diubah ke Bahasa Indonesia -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -78,7 +73,6 @@
       scroll-behavior: smooth;
     }
     
-    /* Custom scrollbar - Dark Mode */
     .dark ::-webkit-scrollbar {
       width: 8px;
     }
@@ -93,7 +87,6 @@
       background: #64748b;
     }
     
-    /* Animations */
     @keyframes fadeInUp {
       from {
         opacity: 0;
@@ -122,8 +115,7 @@
     .animate-delay-200 { animation-delay: 0.2s; }
     .animate-delay-300 { animation-delay: 0.3s; }
     .animate-delay-400 { animation-delay: 0.4s; }
-    
-    /* Intersection Observer animations */
+
     .reveal {
       opacity: 0;
       transform: translateY(20px);
@@ -134,15 +126,13 @@
       opacity: 1;
       transform: translateY(0);
     }
-    
-    /* Focus styles for accessibility */
+
     a:focus-visible,
     button:focus-visible {
       outline: 2px solid #38bdf8;
       outline-offset: 2px;
     }
-    
-    /* Skip link */
+
     .skip-link {
       position: absolute;
       top: -40px;
@@ -159,33 +149,26 @@
   </style>
 </head>
 
-<!-- Ditambahkan class dark untuk default dan transisi tema -->
 <body class="bg-slate-950 text-slate-300 font-sans antialiased">
-  <!-- Skip Link for Accessibility -->
+
   <a href="#main-content" class="skip-link">Langsung ke konten utama</a>
   
-  <!-- Header Navigation -->
   <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/50">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Navigasi utama">
       <div class="flex items-center justify-between h-16">
-        <!-- Logo -->
         <a href="#hero" class="text-slate-900 dark:text-white font-semibold text-lg hover:text-sky-500 dark:hover:text-sky-400 transition-colors" aria-label="Ke halaman utama">
           Portofolio Saya
         </a>
-        
-        <!-- Desktop Navigation -->
+
         <ul class="hidden md:flex items-center gap-8" role="list">
           <li><a href="#tentang" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-medium">Tentang</a></li>
           <li><a href="#pengalaman" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-medium">Pengalaman</a></li>
           <li><a href="#keahlian" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-medium">Keahlian</a></li>
           <li><a href="#kontak" class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-sm font-medium">Kontak</a></li>
-          <!-- Tombol toggle tema ditambahkan -->
           
         </ul>
-        
-        <!-- Mobile Menu Button -->
+
         <div class="flex items-center gap-2 md:hidden">
-          <!-- Tombol toggle tema mobile -->
   
           <button 
             id="mobile-menu-btn" 
@@ -200,8 +183,7 @@
           </button>
         </div>
       </div>
-      
-      <!-- Mobile Navigation -->
+
       <div id="mobile-menu" class="md:hidden hidden pb-4" role="menu">
         <ul class="flex flex-col gap-2" role="list">
           <li><a href="#tentang" class="block py-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors" role="menuitem">Tentang</a></li>
@@ -214,14 +196,12 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
+
     <section id="hero" class="min-h-screen flex items-center pt-16" aria-labelledby="hero-title">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <!-- Left Column - Info -->
           <div class="order-2 lg:order-1">
             <div class="opacity-0 animate-fade-in-up">
-              <!-- Konten diubah ke Bahasa Indonesia -->
               <p class="text-sky-500 dark:text-sky-400 font-medium mb-4 text-sm tracking-wide uppercase">Fresh Graduate • Teknik Komputer</p>
               <h1 id="hero-title"
                 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight sm:whitespace-nowrap">
@@ -232,7 +212,6 @@
               </p>
             </div>
             
-            <!-- Quick Navigation -->
             <nav class="opacity-0 animate-fade-in-up animate-delay-200" aria-label="Navigasi cepat">
               <ul class="flex flex-col gap-3">
                 <li>
@@ -255,10 +234,9 @@
                 </li>
               </ul>
             </nav>
-            
-            <!-- Social Links -->
+
             <div class="flex items-center gap-4 mt-10 opacity-0 animate-fade-in-up animate-delay-300">
-              <!-- Menambahkan tombol Download CV -->
+
               <a 
                 href="/CV_M. IRLAN YUNIARDI.pdf" 
                 download="CV_M_Irlan_Yuniardi.pdf"
@@ -290,13 +268,12 @@
               </a>
             </div>
           </div>
-          
-          <!-- Right Column - Visual -->
+
           <div class="order-1 lg:order-2 flex justify-center lg:justify-end opacity-0 animate-fade-in animate-delay-100">
             <div class="relative">
               <div class="w-56 h-80 sm:w-64 sm:h-96 rounded-2xl bg-gradient-to-br from-sky-500/20 to-slate-200 dark:to-slate-800 p-1">
                 <div class="w-full h-full rounded-xl bg-slate-100 dark:bg-slate-900 flex items-center justify-center overflow-hidden">
-                  <!-- Memperbarui foto profil - ganti src dengan path foto Anda -->
+
                   <img 
                     id="profile-photo"
                     src="assets/img/irlan.JPG"
@@ -308,7 +285,7 @@
                   />
                 </div>
               </div>
-              <!-- Decorative Elements -->
+
               <div class="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-sky-500/30 rounded-xl" aria-hidden="true"></div>
               <div class="absolute -top-4 -left-4 w-16 h-16 bg-sky-500/10 rounded-lg" aria-hidden="true"></div>
             </div>
@@ -317,7 +294,6 @@
       </div>
     </section>
 
-    <!-- About Section / Tentang -->
     <section id="tentang" class="py-20 lg:py-32" aria-labelledby="tentang-title">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal">
@@ -337,7 +313,7 @@
             </div>
             
             <div>
-              <!-- Education Card -->
+
               <article class="bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-6 mb-6">
                 <div class="flex items-start gap-4">
                   <div class="p-3 bg-sky-500/10 rounded-lg flex-shrink-0">
@@ -358,8 +334,7 @@
                   </div>
                 </div>
               </article>
-              
-              <!-- Location Card -->
+
               <article class="bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-6">
                 <div class="flex items-center gap-4">
                   <div class="p-3 bg-sky-500/10 rounded-lg flex-shrink-0">
@@ -380,13 +355,12 @@
       </div>
     </section>
 
-    <!-- Experience Section / Pengalaman -->
     <section id="pengalaman" class="py-20 lg:py-32 bg-slate-50 dark:bg-slate-900/30" aria-labelledby="pengalaman-title">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 id="pengalaman-title" class="text-sm font-medium text-sky-500 dark:text-sky-400 uppercase tracking-wider mb-12 reveal">Pengalaman</h2>
         
         <div class="space-y-6">
-          <!-- Experience Item 1 -->
+
           <article class="reveal group">
             <div class="block bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 transition-all">
               <div class="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -422,8 +396,7 @@
               </div>
             </div>
           </article>
-          
-          <!-- Experience Item 2 -->
+
           <article class="reveal group">
             <div class="block bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 transition-all">
               <div class="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -455,8 +428,7 @@
               </div>
             </div>
           </article>
-          
-          <!-- Experience Item 3 -->
+
           <article class="reveal group">
             <div class="block bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 transition-all">
               <div class="flex flex-col sm:flex-row sm:items-start gap-4">
@@ -492,13 +464,12 @@
       </div>
     </section>
 
-    <!-- Skills Section / Keahlian -->
     <section id="keahlian" class="py-20 lg:py-32" aria-labelledby="keahlian-title">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 id="keahlian-title" class="text-sm font-medium text-sky-500 dark:text-sky-400 uppercase tracking-wider mb-12 reveal">Keahlian</h2>
         
         <div class="grid md:grid-cols-2 gap-8">
-          <!-- Hard Skills -->
+
           <div class="reveal">
             <h3 class="text-slate-900 dark:text-white font-semibold text-xl mb-6 flex items-center gap-3">
               <span class="p-2 bg-sky-500/10 rounded-lg">
@@ -544,8 +515,7 @@
               </li>
             </ul>
           </div>
-          
-          <!-- Soft Skills -->
+
           <div class="reveal">
             <h3 class="text-slate-900 dark:text-white font-semibold text-xl mb-6 flex items-center gap-3">
               <span class="p-2 bg-sky-500/10 rounded-lg">
@@ -606,7 +576,6 @@
       </div>
     </section>
 
-    <!-- Contact Section / Kontak -->
     <section id="kontak" class="py-20 lg:py-32 bg-slate-50 dark:bg-slate-900/30" aria-labelledby="kontak-title">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal">
@@ -616,7 +585,7 @@
           </p>
           
           <div class="grid md:grid-cols-2 gap-8">
-            <!-- Contact Info -->
+
             <div class="space-y-6">
               <a href="mailto:irlanyuni@gmail.com" class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 transition-all group">
                 <div class="p-3 bg-sky-500/10 rounded-lg group-hover:bg-sky-500/20 transition-colors">
@@ -655,8 +624,7 @@
                 </div>
               </div>
             </div>
-            
-            <!-- Contact Form -->
+
             <form id="contact-form" class="space-y-4" novalidate>
               <div>
                 <label for="name" class="block text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Nama</label>
@@ -721,7 +689,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="py-8 border-t border-slate-200 dark:border-slate-800" role="contentinfo">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -758,10 +725,8 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <script>
-    
-    // Mobile Menu Toggle
+
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const menuIcon = document.getElementById('menu-icon');
@@ -769,16 +734,14 @@
     mobileMenuBtn.addEventListener('click', () => {
       const isOpen = mobileMenu.classList.toggle('hidden');
       mobileMenuBtn.setAttribute('aria-expanded', !isOpen);
-      
-      // Toggle icon
+
       if (!isOpen) {
         menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
       } else {
         menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
       }
     });
-    
-    // Close mobile menu when clicking a link
+
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
@@ -786,8 +749,7 @@
         menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
       });
     });
-    
-    // Intersection Observer for reveal animations
+
     const revealElements = document.querySelectorAll('.reveal');
     
     const revealObserver = new IntersectionObserver((entries) => {
@@ -803,8 +765,7 @@
     });
     
     revealElements.forEach(el => revealObserver.observe(el));
-    
-    // Header scroll effect
+
     const header = document.getElementById('header');
     let lastScroll = 0;
     
@@ -819,8 +780,7 @@
       
       lastScroll = currentScroll;
     }, { passive: true });
-    
-    // Active navigation highlight
+
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
     
@@ -846,8 +806,7 @@
         }
       });
     }, { passive: true });
-    
-    // Contact Form Handler
+
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
     
@@ -857,16 +816,14 @@
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
       const message = document.getElementById('message').value.trim();
-      
-      // Basic validation - Pesan dalam Bahasa Indonesia
+
       if (!name || !email || !message) {
         formStatus.textContent = 'Mohon isi semua kolom.';
         formStatus.classList.remove('hidden', 'text-green-500');
         formStatus.classList.add('text-red-500');
         return;
       }
-      
-      // Email validation
+   
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
         formStatus.textContent = 'Mohon masukkan alamat email yang valid.';
@@ -874,8 +831,7 @@
         formStatus.classList.add('text-red-500');
         return;
       }
-      
-      // Simulate form submission
+
       formStatus.textContent = 'Mengirim...';
       formStatus.classList.remove('hidden', 'text-red-500', 'text-green-500');
       formStatus.classList.add('text-sky-500');
@@ -891,11 +847,9 @@
         }, 5000);
       }, 1500);
     });
-    
-    // Update copyright year
+
     document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    // Smooth scroll for anchor links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
