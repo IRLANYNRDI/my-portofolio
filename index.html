@@ -102,6 +102,15 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    @keyframes ctaGlow {
+      0%, 100% {
+        box-shadow: 0 0 0 rgba(14, 165, 233, 0), 0 0 0 rgba(16, 185, 129, 0);
+      }
+      50% {
+        box-shadow: 0 0 28px rgba(14, 165, 233, 0.18), 0 0 56px rgba(16, 185, 129, 0.12);
+      }
+    }
     
     .animate-fade-in-up {
       animation: fadeInUp 0.6s ease-out forwards;
@@ -109,6 +118,10 @@
     
     .animate-fade-in {
       animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    .cta-glow {
+      animation: ctaGlow 2.8s ease-in-out infinite;
     }
     
     .animate-delay-100 { animation-delay: 0.1s; }
@@ -204,19 +217,31 @@
         <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div class="order-2 lg:order-1">
             <div class="opacity-0 animate-fade-in-up">
-              <a
-                href="https://t.me/irapppoint_bot"
-                target="_blank"
-                rel="noreferrer"
-                class="inline-flex items-center gap-2 px-4 py-2 mb-5 rounded-full border border-sky-500/20 bg-sky-500/10 text-sky-600 dark:text-sky-400 hover:bg-sky-500/20 transition-colors"
-              >
-                Kunjungi Situs Saya
-              </a>
               <p class="text-sky-500 dark:text-sky-400 font-medium mb-4 text-sm tracking-wide uppercase">Fresh Graduate • Teknik Komputer</p>
               <h1 id="hero-title"
                 class="text-3xl sm:text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight sm:whitespace-nowrap">
                 M. Irlan Yuniardi S.T
               </h1>
+              <a
+                href="https://t.me/irapppoint_bot"
+                target="_blank"
+                rel="noreferrer"
+                class="cta-glow group relative block max-w-2xl mb-7 overflow-hidden rounded-3xl border border-emerald-400/20 bg-gradient-to-r from-emerald-400 via-sky-400 to-cyan-400 p-[1px] transition-transform duration-300 hover:-translate-y-1"
+              >
+                <span class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.28),_transparent_45%)]" aria-hidden="true"></span>
+                <span class="relative flex items-center justify-between gap-4 rounded-[calc(1.5rem-1px)] bg-slate-950/95 px-5 py-5 sm:px-6">
+                  <span>
+                    <span class="inline-flex items-center gap-2 rounded-full bg-emerald-400/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-emerald-300">Akses Utama</span>
+                    <span class="mt-3 block text-xl font-bold text-white sm:text-2xl">Masuk ke Usaha IRPoint Sekarang</span>
+                    <span class="mt-2 block text-sm leading-relaxed text-slate-300 sm:text-base">Buka layanan usaha saya langsung untuk IRPoint App, IRPoint Laptop, dan IRPoint Kuota.</span>
+                  </span>
+                  <span class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-white text-slate-950 transition-transform duration-300 group-hover:translate-x-1">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h4m0 0v4m0-4L7 17"/>
+                    </svg>
+                  </span>
+                </span>
+              </a>
               <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-xl text-pretty">
                 Membangun dukungan IT yang handal dan menjaga operasional teknologi tetap efisien. Fresh graduate Teknik Komputer dengan predikat Cumlaude, siap berkontribusi sebagai staf IT support dan operasional.
               </p>
@@ -256,7 +281,7 @@
               <a 
                 href="CV_M_Irlan_Yuniardi.pdf"
                 download="CV_M_Irlan_Yuniardi.pdf"
-                class="inline-flex items-center gap-2 px-5 py-2.5 bg-sky-500 hover:bg-sky-600 text-white font-medium rounded-lg transition-all shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40"
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-200 font-medium rounded-lg transition-all hover:bg-slate-50 dark:hover:bg-slate-800"
                 aria-label="Download CV M. Irlan Yuniardi"
               >
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
